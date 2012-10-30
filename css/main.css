@@ -229,7 +229,7 @@ nav li.nav-contacts:hover {
     background: #000;
 }
 #servicesIntro{
-    height:249px;
+    height:288px;
     background-color: #e4e4e4;
     border-bottom:solid 1px #c1c1c1;
     margin: 74px 0 0 0;
@@ -238,7 +238,7 @@ nav li.nav-contacts:hover {
     list-style: none;
     float: left;
     width: 312px;
-    height: 250px;
+    height: 289px;
     margin-right: 19px;
     background-repeat: no-repeat;
     background-position: center 37px;
@@ -265,21 +265,15 @@ nav li.nav-contacts:hover {
 #servicesIntro ul li#technical{
     background-image:url(../img/service1.png);
 }
-#servicesIntro ul li#technical:hover, #servicesIntro ul li#technical.active{
-    background-image:url(../img/service1hover.png);
-}
+
 #servicesIntro ul li#demo{
     background-image:url(../img/service2.png);
 }
-#servicesIntro ul li#demo:hover, #servicesIntro ul li#demo.active{
-    background-image:url(../img/service2hover.png);
-}
+
 #servicesIntro ul li#sample{
     background-image:url(../img/service3.png);
 }
-#servicesIntro ul li#sample:hover, #servicesIntro ul li#sample.active{
-    background-image:url(../img/service3hover.png);
-}
+
 #servicesIntro ul li h2{
     font-size:18px;
     font-family: "BaskervilleURW-RegIta",serif;
@@ -293,6 +287,49 @@ nav li.nav-contacts:hover {
     padding-bottom: 37px;
     background: none;
     margin-bottom: 0;
+}
+/*for sevice inner page*/
+.service #servicesIntro ul li#technical{
+    background-image:url(../img/service1gray.png);
+}
+.service #servicesIntro ul li#demo{
+    background-image:url(../img/service2gray.png);
+}
+.service #servicesIntro ul li#sample{
+    background-image:url(../img/service3gray.png);
+}
+#servicesIntro ul li#technical:hover, #servicesIntro ul li#technical.active{
+    background-image:url(../img/service1hover.png);
+}
+#servicesIntro ul li#demo:hover, #servicesIntro ul li#demo.active{
+    background-image:url(../img/service2hover.png);
+}
+#servicesIntro ul li#sample:hover, #servicesIntro ul li#sample.active{
+    background-image:url(../img/service3hover.png);
+}
+.service #servicesIntro ul li h2{
+    font-size:18px;
+    font-family: "BaskervilleURW-RegIta",serif;
+    text-shadow: #fff 0 1px 0;
+    color: #d1d1d1;
+}
+.service #servicesIntro ul li.active h2{
+    color: #d1d1d1;
+}
+.service #servicesIntro ul li:hover h2{
+    color: #000;
+}
+.service #servicesIntro ul li.active h2{
+    color: #000;
+}
+.service #servicesIntro ul li p{
+    color: #d1d1d1;
+}
+.service #servicesIntro ul li:hover p{
+    color: #000;
+}
+.service #servicesIntro ul li.active p{
+    color: #000;
 }
 #mainContent{
     /*margin-bottom:30px;*/
@@ -481,7 +518,9 @@ footer{
     border-top:solid 1px #000;
     border-bottom: solid 1px #000;
 }
-
+.service .headquote h3{
+    font-size: 24px;
+}
 /*for news page*/
 
 .news #mainContent #mainLeft{
@@ -592,7 +631,7 @@ footer{
 #tabContentWrap li{
     list-style: none;
     width: 0px;
-    height: 200px;
+    height: auto;
     float: left;
     overflow: hidden;
 }
@@ -602,45 +641,45 @@ footer{
     padding-top: 38px;
     background: url(../img/contactBg.png) center center;
 }
-#contactContent form{
+#contactContent form,#tabContentWrap form{
     width: 627px;
     margin: 0 auto;
     font-size:12px;
 }
-#contactContent form div{
+#contactContent form div,#tabContentWrap form div{
     /*height: 45px;*/
     margin: 20px 0;
     color: #797979;
 }
 
-#contactContent form label{   
+#contactContent form label,#tabContentWrap form label{   
     width: 137px;
     display: block;
     float: left;
     margin-top: 2px;
     margin-right: 20px;
 }
-#contactContent form label span{
+#contactContent form label span,#tabContentWrap form label span{
     color: red;
 }
-#contactContent form #sendBtn{
+#contactContent form #sendBtn,#tabContentWrap form #sendBtn{
     text-align:center;
     /*margin: 25px 0;*/
     width: 100%;
     clear: both;
     padding: 30px 0;
 }
-#contactContent form .longInput{
+#contactContent form .longInput,#tabContentWrap form .longInput{
     width: 460px;
 }
-#contactContent form .checkbox{
+#contactContent form .checkbox,#tabContentWrap form .checkbox{
     margin-right:5px;
 }
-#contactContent form h3{
+#contactContent form h3,#tabContentWrap form h3{
     font-size: 24px;
     font-family: "BaskervilleURW-RegIta",serif;
 }
-#contactContent form #sendBtn input{
+#contactContent form #sendBtn input,#tabContentWrap form #sendBtn input{
     background: #000;
     color: #fff;
     border: none;
